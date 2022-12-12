@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="/css/post.css">
+<title>Document</title>
+</head>
+<body>
+  
+  <div class="form">
+    
+    <div class="forms container">
+      <h1 style="text-align: center;">POST STORIES</h1>
+      <form class="w-50" action="/post" method="POST" enctype="multipart/form-data">
+        <input type="hidden"  value=" <%= data.id %>" name="user_id">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Title</label>
+        <input type="text" class="form-control"  name="title">
+        
+      </div>
+  
+      <div class="mb-3">
+        <label for="formFile" class="form-label">Image</label>
+        <input class="form-control" type="file" id="formFile" name="image" accept="image/*">
+      </div>
+  
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label" >Description</label>
+          <textarea class="form-control" id="paragraph" rows="3" name="paragraph"></textarea>
+        </div>
+  
+        <a href="/" style="text-decoration: none;color: white;">Go back.</a>
+    
+        <div class="btns">
+          <div class="button">
+            <button type="submit" class="btn btn-primary">Post</button>
+          </div> 
+          
+        </div>
+    </form>
+    
+  </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+

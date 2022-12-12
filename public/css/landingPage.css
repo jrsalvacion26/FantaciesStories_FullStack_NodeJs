@@ -1,0 +1,118 @@
+body{
+    background: linear-gradient(200deg, #0C2D48,#145DA0,#2E8BC0);
+    font-family: 'Poppins', sans-serif !important;
+    width: 100%;
+    min-height:100%;
+    color:  white;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    
+}
+.line{
+    background-color: black;
+    height: .3rem;
+    width: 100%;
+    z-index: 3;
+}
+a{
+    text-decoration: none;
+}
+.btn_login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top: -2rem;
+    color: white;
+    
+}
+.btn_login button{
+    width: 15rem;
+    border-radius: 11px;
+    height: 5rem;
+    background: none;
+    border: 1px solid red;
+    transition: .3s ease-in-out;
+}
+.btn_login button:hover{
+    background:red;
+    box-shadow: 2px 2px 5px 1px white;
+
+}
+
+
+.btn_register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top: 2rem;
+}
+.btn_register button{
+    width: 15rem;
+    border-radius: 11px;
+    height: 5rem;
+    background: none;
+    border: 1px solid red;
+    transition: .3s ease-in-out;
+
+}
+
+.btn_register button:hover{
+    background:red;
+    box-shadow: 2px 2px 5px 1px white;
+
+}
+
+.navigation{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 21%;
+margin-top: 2rem;
+}
+.navbar{
+    min-width: 77%;
+    height: 6rem;
+    margin-top: 3rem;
+    border-radius: 11px;
+    background: #B1D4E0;
+    font-family: 'Poppins', sans-serif;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    font-weight: 800;
+}
+.navbar-brands{
+text-indent: 2rem;
+text-decoration: none;
+color: black;
+}
+.nav_action{
+display: flex;
+width: 100%;
+align-items: center;
+justify-content: center;
+list-style: none;
+}
+.nav-item{
+display: flex;
+justify-content: center;
+width: 10%;
+}
+
+.admin{
+display: flex;
+
+}
+.admin button{
+font-size: 3rem;
+}

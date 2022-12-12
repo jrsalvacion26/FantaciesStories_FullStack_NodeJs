@@ -1,0 +1,81 @@
+body{
+    background: linear-gradient(200deg, #0C2D48,#145DA0,#2E8BC0);
+    font-family: 'Poppins', sans-serif !important;
+    width: 100%;
+    min-height: 100%;
+    color: white;
+    
+}
+.story{
+font-family: 'Poppins', sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin-top: 5rem;
+}
+.story #imgs{
+height: 41rem;
+width: 70%;
+border: 2px solid black;
+z-index: 1;
+border-radius: 11px;
+}
+
+.navigation{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 21%;
+margin-top: 2rem;
+}
+.navbar{
+    min-width: 77%;
+    height: 6rem;
+    margin-top: 3rem;
+    border-radius: 11px;
+    background: #B1D4E0;
+    font-family: 'Poppins', sans-serif;
+}
+.logo{
+display: flex;
+flex-direction: row;
+font-weight: 800;
+}
+.navbar-brands{
+text-indent: 2rem;
+text-decoration: none;
+color: black;
+}
+.nav_action{
+display: flex;
+width: 100%;
+align-items: center;
+justify-content: center;
+list-style: none;
+font-weight: 700;
+
+}
+.nav_action a{
+color: black;
+}
+.nav-item{
+display: flex;
+justify-content: center;
+width: 10%;
+}
+
+.log{
+    display: flex;
+    flex-direction: row;
+    font-weight: 800;
+}
+
+.log p{
+    padding-top: 1rem;
+    font-weight: 800;
+    color: black;
+}
+.log button{
+    font-size: 3rem;
+}

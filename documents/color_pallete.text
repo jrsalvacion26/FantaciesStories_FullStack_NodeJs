@@ -1,0 +1,25 @@
+#145DA0 Midnight Blue
+#0C2D48 Dark Blue
+#2E8BC0 Blue 
+#B1D4E0 Baby Blue
+
+
+let post_query= async(user_id, title,image,paragraph) =>{
+    
+    
+
+    try{
+        const query =   `INSERT `+
+                            `post `+
+                        `VALUES `+
+                            `(null, '${user_id}','${title}','${image}','${paragraph}') `
+    
+    await database(query)
+    
+    console.log(result,"sdada")
+    return true
+    
+    }catch(error){
+        return error
+    }
+}

@@ -1,0 +1,42 @@
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/css/edit.css">
+<style>
+   
+</style>
+
+
+<div class="form">
+    
+  <div class="forms container">
+    <h1 style="text-align: center;">EDIT STORIES</h1>
+    <form class="w-50" action="/post/author/all_stories/update/?_method=PUT" method="POST" enctype="multipart/form-data">
+      <input type="hidden" value="<%= update.id %>" name="id">
+      <input type="hidden" value="<%= update.user_id %>" name="user_id">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Title</label>
+      <input type="text" class="form-control"  name="title" value="<%= update.title %>">
+      
+    </div>
+
+    <div class="mb-3">
+      <label for="formFile" class="form-label">Image</label>
+      <input class="form-control" type="file" id="formFile" name="image" value="<%= update.image %>" accept="image/*">
+    </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label" >Description</label>
+        <textarea class="form-control" id="paragraph" rows="3" name="paragraph"><%= update.paragraph %></textarea>
+      </div>
+
+      <div class="btns">
+
+        <div class="button">
+            <button type="submit" class="btn btn-primary">Submit</button>
+           
+        </div> 
+       
+      </div>
+  </form>
